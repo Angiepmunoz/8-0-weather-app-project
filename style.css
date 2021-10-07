@@ -1,0 +1,50 @@
+body {
+    text-align: center;
+    /* position: relative; */
+    margin-left: 10%;
+    margin-right: 10%;
+    display: grid;
+}
+
+header {
+    color: white;
+    background-color: teal;
+    border-color: black;
+}
+
+header section {
+    margin: 5px;
+}
+
+#main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr)
+}
+
+main {
+    min-height: 200px;
+    margin: 10px;
+    grid-column: span 3;
+    align-items: center;
+    background-color: lightgray;
+    border-color: teal;
+}
+
+/* main .location-info {
+    padding-block-end: 5px;
+} */
+
+#previous-search-block {
+    margin: 10px;
+}
+
+#forecast {
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/* #previous-search-block ul {
+    
+} */
+
