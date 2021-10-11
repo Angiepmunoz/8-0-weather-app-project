@@ -71,7 +71,7 @@ const createPreviousSearch = (location, locationData) => {
   li.setAttribute("class", `${formattedClass || location}`);
 
   //need to make this a link
-  li.innerHTML = `<a class="event">${formattedLoc}</a>  - ${weather}°F`
+  li.innerHTML = `<a href="#">${formattedLoc}</a>  - ${weather}°F`
   
   //is there a way to add multiple elements to the same event listener
   li.addEventListener("click", (e)=> {
@@ -93,7 +93,7 @@ const createPreviousSearch = (location, locationData) => {
 
 const createForecasting = (locationData) => {
     let forecast = locationData.weather;
-
+    console.log(locationData)
     document.querySelectorAll(".forecast-day").forEach(day => {
         day.remove();
     })
